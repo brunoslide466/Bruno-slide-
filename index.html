@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicólogo André Lemos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #ffffff;
+        }
+
+        .logo h1 {
+            color: #4caf50;
+            font-weight: bold;
+            animation: fadeIn 2s;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #555555;
+            margin-right: 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+            animation: fadeIn 2s;
+        }
+
+        .social-links a:hover {
+            color: #4caf50;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 5%;
+            background-color: #ffffff;
+            animation: slideIn 2s;
+        }
+
+        .hero-text h2 {
+            color: #4caf50;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .hero-text h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #777777;
+            max-width: 600px;
+            text-align: center; /* Adiciona alinhamento central */
+        }
+
+        .btn {
+            text-decoration: none;
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+            animation: fadeIn 2s;
+        }
+
+        .btn:hover {
+            background-color: #388e3c;
+            transform: scale(1.05);
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            animation: fadeIn 2s;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 5%;
+            background-color: #ffffff;
+            border-top: 1px solid #dddddd;
+            animation: fadeIn 2s;
+        }
+
+        footer p {
+            color: #777777;
+        }
+
+        .welcome-section {
+            padding: 60px 5%;
+            text-align: center;
+            background-color: #f5f5f5;
+            animation: fadeIn 2s;
+        }
+
+        .welcome-section h2 {
+            font-size: 32px;
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            font-size: 18px;
+            color: #777777;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .doctor-section {
+            padding: 60px 5%;
+            text-align: left;
+            background-color: #4caf50;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 2s;
+        }
+
+        .doctor-section .text {
+            max-width: 100%;
+            padding-right: 20px;
+            text-align: center;
+        }
+
+        .doctor-section h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .doctor-section h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .doctor-section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .doctor-section .image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .doctor-section {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .doctor-section .text {
+                max-width: 50%;
+                padding-right: 20px;
+                text-align: left;
+            }
+
+            .doctor-section .image {
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero-text h1 {
+                font-size: 30px;
+            }
+
+            .hero-text p {
+                font-size: 16px;
+            }
+
+            .social-links {
+                margin-top: 20px;
+                flex-direction: column;
+            }
+
+            .social-links a {
+                margin: 10px 0;
+            }
+
+            .hero {
+                text-align: center;
+            }
+
+            .hero-image {
+                margin-top: 20px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Psicólogo André Lemos</h1>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/psicologoandrelemos?igsh=cnk0emdhcWwycWlr" target="_blank">Instagram</a>
+            <a href="https://wa.me/556192558044" target="_blank">WhatsApp</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Bem-vindo ao Espaço de Cuidado Psicológico</h2>
+            <h1>Acolhimento e Apoio <span style="color: #4caf50;">para sua Jornada</span></h1>
+            <p>Aqui você encontrará um espaço seguro e acolhedor, onde sua saúde mental é prioridade. Juntos, podemos trabalhar para encontrar o equilíbrio e bem-estar que você merece.</p>
+            <a href="https://wa.me/556192558044" class="btn">Marque sua sessão</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://th.bing.com/th/id/OIG1.SLJ8a0IrEe6ZjloWeL6d?dpr=2,8&pid=ImgDetMain" alt="Saúde Mental">
+        </div>
+    </section>
+
+    <section class="welcome-section">
+        <h2>Seja Bem-Vindo!</h2>
+        <p>Meu nome é André Lemos, e estou aqui para ajudar você a encontrar caminhos para superar desafios emocionais e viver uma vida mais plena. Seja qual for a sua jornada, estou ao seu lado para oferecer o apoio necessário.</p>
+    </section>
+
+    <section class="doctor-section">
+        <div class="text">
+            <h3>Psicólogo André Lemos</h3>
+            <h4>Formação e Especialização</h4>
+            <p>Sou formado pela Universidade Paulista - UNIP e estou cursando especialização clínica em Gestalt-terapia pelo Centro de Gestalt-terapia - CEGEST. Trabalho dentro de uma abordagem fenomenológica-existencial, buscando sempre entender o ser humano em sua totalidade.</p>
+            <p>Minha experiência inclui atendimento a pessoas em situações de perda, luto, pacientes terminais e seus familiares, além de crianças e adolescentes que passaram por violência sexual.</p>
+            <p>Atendo crianças, adolescentes, adultos e idosos, sempre com uma escuta sensível e respeitosa, buscando promover o desenvolvimento e bem-estar de cada um.</p>
+        </div>
+        <div class="image">
+            <img src="https://cdn.discordapp.com/attachments/1237922929736679537/1271233412996534363/1000085413.png?ex=66b697e0&is=66b54660&hm=826517efe94ca20778db55114e1ab792c8dbc010d50cc38575a3ca048518f035" alt="Psicólogo André Lemos">
+        </div>
+    </section>
+
+     <footer>
+       
+        <p>Endereço: QNM 03 "Conjunto "O" Lote 37, SL 103, St. M Eqnm 1/3 Bl D Conjunto O, 37 - SL 103 - Ceilândia, Brasília - DF, 72215-045</p>
